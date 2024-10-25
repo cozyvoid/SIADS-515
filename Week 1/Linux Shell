@@ -1,0 +1,23 @@
+Introduction to Linux Shell:
+
+    > The Linux shell is a program enabling user interaction with the Linux operating system.
+    > Comparable to systems like MacOS and Windows, Linux also uses a shell for command execution.
+    > Shells include built-in and external commands, and multiple shells can run simultaneously.
+
+Types of Shells:
+    > Common shell types include bash, sh (boring shell), csh, tcsh, ksh, and zsh.
+    > The course emphasizes using the bash shell, particularly within a Jupyter environment.
+
+Working with the Linux Shell in Jupyter:
+    > Start a Linux shell by selecting "New Terminal" from the dropdown menu, similar to creating a new Python notebook.
+    > The shell interface typically presents a black screen with white text and a Linux command prompt.
+
+Linux Command Prompt Structure:
+
+    > The prompt includes several components:
+        - Linux Username: Always set as 'jovian' for this setup.
+        - Host Name: Shows 'Jupyter' followed by a unique identifier for the individual session.
+        - Separator and Current Directory: A colon separates username/hostname from the current working directory.
+        - Prompt End Marker: A dollar sign marks the end of the prompt, indicating readiness for user input.
+    
+    > Usage: The shell allows interaction with the machine using command-line entries, facilitating various tasks within the Jupyter environment.

@@ -1,0 +1,29 @@
+Accessing Shell Commands from Jupyter:
+
+Integration with Jupyter: 
+    > It's possible to execute shell commands directly from within a Jupyter notebook.
+    > 'History' Command: Demonstrates the use of the history command to review previously executed shell commands, which can be helpful for tracking and understanding the sequence of actions taken.
+
+Using Exclamation Mark/Bang in Jupyter:
+    > Prefix for Shell Commands: In Jupyter notebooks, shell commands can be run by prefixing them with an exclamation mark, referred to as "bang."
+
+    Examples of Usage:
+        > !ls: Lists the contents of the current directory.
+        > !ls.. of the parent directory: Shows files in the parent directory, useful for file navigation.
+
+Assigning Command Output to Variables:
+
+    > Capturing Command Output: The output of shell commands can be assigned to Python variables.
+    
+    Example: 
+        > a = !ls captures the directory listing into a list, which can be accessed element by element.
+
+- Benefits include the ability to traverse and manipulate files programmatically.
+
+Additional Tips:
+    > Viewing File Content: Use commands like !head data/ride_final.csv to preview files.
+    > Dual Approach: Shell commands can be executed both directly in the terminal or from within a Jupyter notebook using the bang syntax.
+
+Future Discussions:
+
+Magic Commands in Jupyter: Plans to explore Jupyter magic commands further in upcoming sessions, indicating more advanced features and functionalities.

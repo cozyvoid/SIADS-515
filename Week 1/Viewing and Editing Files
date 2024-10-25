@@ -1,0 +1,34 @@
+Command Line Interface for Data Manipulation
+
+Introduction to Commands head and tail:
+    > head is used to view the first few lines of a file
+    > tail displays the last few lines of a file  
+
+- These commands are useful for quickly checking the contents of a file without loading it fully into a program like Python or Pandas.
+
+        Example usage:
+            > head -20 ride2018.csv to display the first 20 lines of the file.
+            > tail -50 ride2018.csv to display the last 50 lines.
+
+- Both commands accept a numerical argument prefixed by a dash to specify how many lines to display.
+
+Exploring File Contents with Shell Commands:
+
+    - Combined usage of ls command options: 
+        > ls -l for detailed listing, and ls -lh for human-readable file sizes.
+        - File examples included ride2018.csv (85k file size) and visualizing contents with these commands.
+
+    - Using the cat, more, and less Commands:
+        > cat (concatenate) outputs the entire content of a file, useful when piping data to other commands.
+        > more allows interactive paging through a file, with controls like space to advance and b to go back.
+        > less provides similar functionality, allowing navigation through file contents, but without percentage display.
+
+Editing Files with Nano:
+    > Nano is a lightweight text editor accessible from the command line.
+        > Example usage includes editing text in a file, with commands like Ctrl+O to save changes and Ctrl+X to exit.
+
+Getting Help with Commands:
+    > man (manual) provides access to command manuals, structured with a prologue, synopsis, and options descriptions.
+    > help offers help for shell built-in commands, like cd.
+
+> This overview covers how to utilize basic command line tools to manipulate and view data effectively in the Linux environment, emphasizing practical examples and commands that enhance file management and data insights.

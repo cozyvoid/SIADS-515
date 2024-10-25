@@ -1,0 +1,64 @@
+---Linux File System and Basic Commands
+
+Introduction to Linux File System
+    > The Linux file system is akin to Finder on a Mac or File Explorer on Windows.
+    > Files are organized into directories, referred to as folders in other OS environments.
+
+Basic Commands
+    > ls: Stands for "list"; lists directory contents.
+    > cd: Stands for "change directory"; changes the current working directory.
+    > pwd: Stands for "print working directory"; displays the current directory path.
+
+    Exploring the ls Command
+        > No Arguments: ls lists files and directories in the current directory.
+        > Single Argument: Example ls data lists contents of the "data" directory.
+    
+Options:
+    -l: Long listing format, providing detailed information about files.
+    -a or --all: Displays all files, including hidden ones.
+    -h: Human-readable sizes, usually used with -l.
+    -t: Sort by modification time, newest first.
+
+---Command Line Arguments
+
+Forms of Arguments:
+    > No dashes (e.g., ls data).
+    > Single dash (e.g., ls -l).
+    > Double dash (e.g., ls --all), which is a newer, more descriptive format.
+    > Detailed View with ls -l
+
+Columns:
+    > File permissions, indicating read, write, and execute capabilities.
+    > Number of links to the file.
+    > User and group ownership.
+    > File size in bytes.
+    > Last modification date and time.
+    > File Permissions
+    > Permissions are displayed in three groups of three (e.g., rw-r--r--).
+
+Groups:
+    > User permissions (owner).
+    > Group permissions.
+    > Permissions for others.
+    > Directories have execute permissions (x) to allow changing into that directory.
+
+---Navigating with cd
+
+    > cd <directory>: Changes into the specified directory.
+    > cd ..: Moves to the parent directory.
+
+
+Special Characters:
+    > Dot (.) refers to the current directory.
+    > Double dot (..) refers to the parent directory.
+    > Root directory is represented by a single slash (/).
+    > Home directory is often represented by a tilde (~).
+
+---Printing Directory Path with pwd
+    > Displays the absolute path of the current directory.
+
+Absolute vs. Relative Paths:
+    > Absolute paths start with a slash and specify a complete path from the root.
+    > Relative paths do not start with a slash and specify a path relative to the current directory.
+
+> This guide covers the foundational operations on the Linux file system and introduces the basic command-line commands necessary for file navigation and management.
