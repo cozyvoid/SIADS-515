@@ -1,0 +1,18 @@
+Linux
+    > Linux command line is a text interface to your computer
+    > Other names: shell, terminal, console, prompt, etc.
+
+History
+    > Unix (early operating system) designed to run as a multi-user system on mainframe computers, with users connecting to it remotely via individual terminals
+    > These terminals were pretty basic by modern standards: just a keyboard and screen, with no power to run programs locally
+    > therefore, any programs that ran on the mainframe had to produce text as an output and accept text as an input
+    > Unix mainframe via a terminal users still had to manage the sort of file management tasks that you might now perform with a mouse and a couple of windows
+    > users in the 70s could do everything entirely with a textual interface
+    > Linux is a sort-of-descendent of Unix, you’re most likely to be using a shell called bash.
+
+Commands
+    > Each of these tasks required its own program or command: 
+        - change directories (cd)
+        - list their contents (ls)
+        - rename or move files (mv)
+
