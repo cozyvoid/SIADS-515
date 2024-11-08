@@ -1,0 +1,185 @@
+1. Which of the following are true about Python code cells in Jupyter? (Select all that apply)
+
+    > Cells must be executed in-order
+    -  Cells can be re-run
+    -  Order of cell execution can be potential source of bugs
+    -  Rerunning of cells can be potential source of bugs
+
+**Explanation**
+
+    Cells must be executed in-order: This is not strictly true. While executing cells in order (top to bottom) is generally recommended, Jupyter notebooks allow for cells to be executed in any order. However, this can lead to inconsistencies if later cells depend on the output of earlier cells.
+
+    Cells can be re-run: True. You can re-run any cell in a Jupyter notebook as many times as you like. This is useful for debugging or iterating on code.
+
+    Order of cell execution can be potential source of bugs: True. Since cells can be executed out of order, it can lead to situations where variables or states are not as expected, causing bugs. This can be especially tricky in complex notebooks.
+
+    Rerunning of cells can be potential source of bugs: True. Rerunning cells, especially out of sequence, can introduce bugs by overwriting variables or states that other cells depend on.
+
+So, the true statements are:
+
+    - Cells can be re-run
+    - Order of cell execution can be potential source of bugs
+    - Rerunning of cells can be potential source of bugs
+
+Navigating Jupyter notebooks with these considerations in mind will help you maintain a smooth workflow.
+
+2. Which of the following are not datatypes from the Collections library? (Select all that apply)
+
+    > Default Dict
+    > Deque
+    - Map
+    - Queue
+
+**Explanation**
+
+In the collections module in Python, the following types are included:
+
+    DefaultDict: Known as defaultdict, this is a dict subclass that provides a default value for nonexistent keys.
+
+    Deque: Known as deque, this is a double-ended queue that supports adding and removing elements from either end efficiently.
+
+    Queue: Not a part of the collections module. Python does provide a Queue class, but it's located in the queue module, not collections.
+
+    Map: Not a part of the collections module. Python’s standard library does not include a Map type. The closest is map(), a built-in function.
+
+So, the following are not datatypes from the collections library:
+
+    - Map
+    - Queue
+
+3. Named Tuples can be indexed via dot-notation or via numerical index
+
+    - True
+    > False
+
+**Explanation**
+
+True. Named tuples in Python can indeed be indexed in two ways:
+
+    Dot-notation: Accessing fields by their name.
+
+    Numerical index: Accessing fields by their position.
+
+Here’s an example to illustrate this:
+
+from collections import namedtuple
+
+# Define a named tuple
+Point = namedtuple('Point', ['x', 'y'])
+
+# Create an instance of the named tuple
+p = Point(10, 20)
+
+# Accessing fields by dot-notation
+print(p.x)  # Output: 10
+print(p.y)  # Output: 20
+
+# Accessing fields by numerical index
+print(p[0])  # Output: 10
+print(p[1])  # Output: 20
+
+
+4. All of the following are true of the Collections.Counter datatype EXCEPT...
+
+    - Counter is for benchmarking execution times to aid program optimization
+    > Counter accepts an iterable object such as a string or list
+    > Counter stores given elements as keys and counts as values
+    > Counter supports access via the .items() method, just as dictionaries do
+
+**Explanation**
+
+All of these statements about the collections.Counter datatype are true except:
+
+> Counter is for benchmarking execution times to aid program optimization
+
+This is incorrect. The Counter is not used for benchmarking execution times. Instead, it is a specialized dictionary subclass designed to count the occurrences of elements in an iterable. Here are the correct statements:
+
+    - Counter accepts an iterable object such as a string or list: True. You can initialize a Counter with any iterable.
+    - Counter stores given elements as keys and counts as values: True. It keeps track of how many times each element appears.
+    - Counter supports access via the .items() method, just as dictionaries do: True. You can use .items() to get the key-value pairs.
+
+5. Which of the following options completes the below error messages?
+    "_____ Error: must be int not str"
+
+    > Class
+    > Conversion
+    - Type
+    > Attribute
+
+**Explanation**
+
+The completed error message would be: "TypeError: must be int not str". This indicates that a value of the wrong type was passed to a function or operation that expected an integer.
+
+Examples of the other error types mentioned:
+
+(1) AttributeError: This error occurs when an invalid attribute reference is made.
+
+class MyClass:
+    def __init__(self, value):
+        self.value = value
+
+obj = MyClass(10)
+print(obj.non_existent_attribute)
+
+Error Message: AttributeError: 'MyClass' object has no attribute 'non_existent_attribute'
+
+(2) ConversionError: While "ConversionError" is not a built-in Python error, similar situations where type conversion fails might involve ValueError or TypeError.
+
+value = '123a'
+int_value = int(value)
+
+Error Message: ValueError: invalid literal for int() with base 10: '123a'
+
+(3) ClassError: Again, "ClassError" is not a standard error in Python, but an example involving classes might raise different types of errors depending on the situation.
+
+class A:
+    def method(self):
+        print("Method in class A")
+
+obj = None
+obj.method()
+
+Error Message: AttributeError: 'NoneType' object has no attribute 'method'
+
+6. Given a dictionary declaration "d={'a':1, 'b':2, 'c':3}" The expression "print(d['d'])" is likely to cause a...
+
+    > Type Error
+    > Invalid Expression Error
+    > Index Error
+    - Key Error
+
+**Explanation**
+
+Given the dictionary d={'a':1, 'b':2, 'c':3}, the expression print(d['d']) is likely to cause a:
+
+> Key Error
+
+This is because the key 'd' does not exist in the dictionary d. When trying to access a non-existent key in a dictionary, Python raises a KeyError. Here's an example:
+
+d = {'a': 1, 'b': 2, 'c': 3}
+print(d['d'])  # Raises KeyError: 'd'
+
+
+7. You decide you would like to use the Pandas library/module’s method “read_csv()” to easily import the file “Grades.csv”
+You start and run your new program with exclusively the line of code below:
+
+        Grades = pandas.read_csv(“Grades.csv”)
+
+Running the code produces the following error:		( Optional line)
+
+	    NameError: name 'pandas' is not defined		( Optional line )
+
+Which of the following is the most likely source of error?
+
+    > Pandas is not installed
+    - Pandas is not imported
+    > There is no version of pandas available featuring the read_csv() method
+
+**Explanation**
+
+To fix this, you need to import the Pandas library before using it. The corrected code should include the import statement like this:
+
+import pandas as pd
+Grades = pd.read_csv("Grades.csv")
+
+This imports the Pandas library and allows you to use its methods such as read_csv().

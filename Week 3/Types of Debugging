@@ -1,0 +1,43 @@
+Overview of Debugging Techniques
+
+Print Debugging
+
+    > Description: Utilizes print statements to track code flow and variable states. This helps identify anomalies or issues within the code by outputting intermediate values.
+    > Pros and Cons: It's a common method in Python, especially in cases where large amounts of data are involved. However, it can clutter the code and slow down processes when dealing with large outputs.
+    > Practical Example: By printing steps and checking values like latitude and longitude, you ensure they are as expected.
+    > Caution: Be wary of excessive output which can slow down notebooks. Remove lengthy print outputs to maintain efficiency.
+
+Interactive Debugging
+
+    > Tools: PDB (Python Debugger), IPDB, Pixie Debugger.
+    > Pixie Debugger: Mentioned as a visual debugger specifically useful for Jupyter notebooks. Introduces concepts like stepping through the code, setting breakpoints, and resuming execution.
+    > Workflow:
+        - Setting Breakpoints: Pause code execution at specific lines for examination.
+        - Examining Stacks: Allows stepping into function calls or stepping out to higher call stacks.
+
+Post Mortem Debugging
+
+    > Description: A form of interactive debugging occurring after a crash, useful for diagnosing why an error occurred based on program state at crash time.
+
+Discussion on Error Handling
+
+    > Data Debugging: Identify and resolve data-specific issues like format errors or conversion problems.
+    > Casting Issues: Error handling strategies such as using try-except blocks to capture conversion errors and return alternative values like numpy.nan.
+
+Example: Finding Maximum Value
+
+    > Initial Problem: Simple function findmax failed to return the correct maximum due to an error in conditional logic.
+    > Debugging with Pixie:
+        - Set Breakpoints: Identify where the logic fails by examining variable states.
+        - Modified Logic: Adjusted incorrect conditional from < to > in if statement.
+
+Recommendations
+
+    > Using Pre-existing Solutions: Often, functions like findmax are unnecessary as libraries or standard functions may offer these capabilities.
+    > Utilizing Community Resources: Many issues have been encountered before; leveraging forums like Stack Overflow can provide solutions quickly.
+
+Key Takeaways
+
+    - Despite its pitfalls, print debugging is widespread due to its simplicity.
+    - Interactive debugging tools offer more advanced capabilities, helping to dissect complex errors more efficiently.
+    - Awareness of data integrity is crucial; many issues stem from errors within the dataset rather than the code itself.

@@ -1,0 +1,30 @@
+Debugging
+
+Definition and History:
+    - Debugging is the process of identifying and resolving defects in software.
+    - The term "bug" originated from an actual moth causing a malfunction in an early computer system, an incident famously associated with Admiral Grace Hopper.
+    - Early work on debugging, like Gill's diagnosis of mistakes in the 1950s, laid the foundation for modern debugging practices.
+
+Debugging Process:
+    > Step 1: Reproduce the Problem: It is crucial to be able to repeatedly produce the issue to diagnose it effectively.
+    > Step 2: Simplify the Code: Streamlining complex code can both unveil issues and make it easier to manage and understand.
+    > Step 3: Create Test Cases: Formulating specific test cases helps identify predictable outcomes and issues.
+
+Debugging Techniques:
+    - Examples include print debugging and interactive debugging.
+    - Jupyter notebooks are introduced as a tool for an enhanced debugging experience, though this course will focus on traditional methods.
+    - Data Structures
+
+Basic Data Structures:
+    - Discussion covers lists, tuples, sets, and dictionaries. These are foundational elements that should be familiar for effective debugging.
+
+Advanced Data Structures:
+    - Includes collections like counters, default dictionaries (defaultdicts), deques (decks), and named tuples. These structures are particularly useful in data science applications.
+
+Related Concepts
+    > Test Driven Development (TDD):
+    While not a focus of this course, TDD involves writing test cases prior to code development, ensuring that code passes all tests before proceeding.
+
+Additional Notes
+> The course will initially focus on debugging before transitioning to data structures.
+Debugging techniques and data structures introduced will be used in tandem to enhance problem-solving and coding efficacy.

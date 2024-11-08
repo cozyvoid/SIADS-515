@@ -1,0 +1,107 @@
+1. Introduction to Debugging
+
+Overview: Emphasis on debugging as a crucial skill in programming, focusing not just on identifying errors but also on fixing them.
+    Example Highlighted:
+    Initial code block with a typo: print toknow.
+    Encountered a NameError.
+    Correction by changing to print token.
+
+2. Understanding Tracebacks
+
+Key Concepts:
+    Starting Point: Begin reading tracebacks from the bottom to identify the primary error.
+    Stack Trace: Follows the sequence of function calls leading to the error.
+    Demonstration:
+    Example with functions count_unique and preprocessed_text.
+    Encountered NameError due to incorrect variable casing (I instead of i).
+    Step-by-step tracing from the module level down to the specific line causing the error.
+
+3. Common Python Errors and Solutions
+
+    a. NameError
+    Cause: Accessing variables that haven't been defined or have typographical errors.
+    Solutions:
+        - Ensure correct variable initialization.
+        - Check for consistent variable naming, especially in nested loops.
+    b. AttributeError
+    Cause: Accessing nonexistent attributes of an object.
+    Example:
+    Attempting to access value attribute of a list object.
+    Solutions:
+        - Consult documentation to verify correct attribute names.
+        - Avoid typos and ensure the attribute exists for the object type.
+    c. ImportError
+    Cause: Issues with module imports, such as incorrect module names or missing components.
+    Examples:
+    Incorrect import statement: import scikit Learn leading to ModuleNotFoundError.
+    Correct import using alias: import sklearn.
+    Specific component import issues: from sklearn.naive_bayes import GaussianNB instead of incorrect class names.
+    Solutions:
+        - Verify module names and their correct casing.
+        - Use appropriate aliases as per documentation.
+        - Ensure the specific components being imported exist within the module.
+    d. IndexError
+    Cause: Accessing list indices that are out of the valid range.
+    Example:
+    Accessing numbers[3] in a list of three elements (indices 0-2).
+    Solutions:
+        - Adjust index values to be within the valid range.
+        - Use try-except blocks to handle potential out-of-range access gracefully.
+    e. KeyError
+    Cause: Accessing non-existent keys in dictionaries.
+    Example:
+    Accessing word_counts['I'] when the key 'I' doesn't exist.
+    Solutions:
+        - Use the get method to safely retrieve values.
+        - Check for key existence using conditional statements before access.
+    f. SyntaxError
+    Cause: Incorrect Python syntax, such as missing colons, parentheses, or improper indentation.
+    Examples:
+    Missing parentheses in print statements (print word_counts[i] without parentheses in Python 3).
+    Missing colon in loop declarations.
+    Solutions:
+        - Carefully review and correct the syntax as per Python's rules.
+        - Utilize Python 3 syntax, especially for functions like print().
+    g. TypeError
+    Cause: Performing operations on incompatible data types.
+    Example:
+        Adding an integer and a string: C = A + B where A = 1 and B = "1".
+    Solutions:
+        - Ensure data types are compatible for the intended operation.
+        - Use type casting where appropriate, e.g., converting strings to integers before addition.
+    h. ValueError
+    Cause: Operations receiving arguments of the correct type but inappropriate value.
+    Examples:
+    Converting a non-numeric string to an integer: int('a').
+    Unpacking mismatched number of values from a list.
+    Solutions:
+        - Validate values before performing operations.
+        - Ensure the number of variables matches the number of values when unpacking.
+
+4. Practical Demonstrations
+
+> Notebook Walkthrough:
+    - Multiple code blocks were demonstrated in a notebook environment to showcase each error type.
+    - Step-by-step debugging was performed, illustrating how to identify and fix each error.
+> Handling Exceptions:
+    - Introduction to using try and except blocks to manage potential errors without terminating the program.
+    - Examples included handling IndexError and KeyError gracefully.
+> Action Items
+    - Practice Debugging:
+    - Apply the discussed error-fixing techniques in personal coding projects.
+    - Revisit existing code to identify and correct potential errors using the outlined methods.
+    - Study Documentation:
+        Familiarize with documentation of commonly used libraries like Pandas, Matplotlib, Pyplot, and Scikit-Learn to prevent AttributeError and ImportError.
+    - Implement Exception Handling:
+    - Incorporate try and except blocks in code to handle foreseeable errors and enhance program robustness.
+
+Upcoming Sessions:
+> Further exploration of exception handling in Python, focusing on advanced techniques beyond try and except.
+Introduction to debugging tools and integrated development environment (IDE) features that aid in identifying and resolving errors.
+
+Assignments:
+> Complete exercises that involve intentionally introducing errors into code and practicing their identification and resolution.
+> Develop a small project incorporating multiple types of error handling to solidify understanding.
+
+Conclusion
+> The session provided a comprehensive overview of common Python errors, strategies to read and interpret tracebacks, and practical methods to debug and fix issues effectively. Emphasizing hands-on practice and familiarity with library documentation was highlighted as essential for becoming proficient in Python debugging.

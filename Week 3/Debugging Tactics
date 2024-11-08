@@ -1,0 +1,34 @@
+Debugging Tactics
+
+1. Print Debugging: Emphasized as a primary technique, frequently used in debugging processes.
+2. Interactive Debugging: Introduction to the Pixie debugger, a graphical tool available in Jupyter Notebooks.
+3. Control Flow Analysis: Mentioned briefly but not a focus of the discussion.
+4. Unit Testing: Discussed for testing basic functionality of functions.
+5. Profiling: Time will be dedicated to understanding profiling techniques.
+
+Data-Related Bugs
+    - Bugs can sometimes originate from faulty data rather than code errors.
+    - An emphasis on fixing data issues instead of writing extensive code for edge cases, highlighting efficiency in time and resource allocation.
+
+Efficient Debugging
+    - Aim to integrate efficient debugging practices within the scope of efficient data processing.
+    - Making trade-offs between code development and data correction while debugging.
+
+Understanding Python Tracebacks
+    - Concept Explanation: A traceback (or stack trace/backtrace) in Python occurs when an exception is raised and not caught, providing detailed error information.
+    - Example Discussion: A simple code snippet with a typo-induced NameError is used to exemplify how a traceback pinpoints the error's location.
+
+Traceback Example:
+    > Creation of a list of strings with variable tokens.
+    > For loop intended to print each element.
+    > Typographical error (tokn instead of token) leads to a NameError, demonstrating the traceback’s ability to identify and locate errors in code.
+
+    token = ['two', 'blue', 'bike', 'umbrella']
+    for i in token():
+        
+
+Practical Advice:
+    - Recognize the importance of balancing fun in coding with practical tasks like data fixing.
+    - Consider the economical use of time and money in both coding and debugging phases.
+
+> This structured overview highlights the key concepts and methods advocated for debugging, along with practical considerations relevant to data processing and error handling in programming.
