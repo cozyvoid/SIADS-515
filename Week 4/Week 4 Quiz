@@ -1,0 +1,43 @@
+1. Which of the below runtimes are most ideal?
+
+    > O(n!)
+    > O(2^n)
+    > O(n^3)
+    > O(n)
+
+2. Which of the below runtimes are most ideal?
+
+    > O(n log n)
+    > O(log n)
+    > O(n^2)
+    > O(n!)
+
+3. O Notation tells us...
+
+    > the exact runtime of an algorithm
+    > how runtime requirements scale to size of input data
+
+4. O-Notation is meant to model performance under...
+
+    > the best-case conditions
+    > the worst-case conditions
+
+5. At your summer internship you find yourself asked to write an algorithm that runs in “constant time.” Which of the below notations does this correspond with?
+
+    > O(c)
+    > O(0)
+    > O(1)
+    > O(θ), or simply θ
+
+6. Indexing a single element in an array is an operation that could be said to run in ____ time?
+
+    > constant
+    > linear
+    > quadratic
+    > logarithmic time
+
+7. After a programming interview, you receive critical feedback that your implementation of a function unnecessarily takes exponential time when the expectation was for it to run in linear time. Which of the following statements are valid:
+
+    > The function runtime is expected to remain consistent regardless of input size.
+    > The function runtime currently scales proportionately to input size.
+    > The function runtime currently doubles for each positive incrementation to the input size.
