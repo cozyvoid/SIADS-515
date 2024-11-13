@@ -1,0 +1,48 @@
+> The session begins with an introduction to the week's focus: understanding complexity and profiling in algorithmic efficiency. Two main themes are highlighted:
+
+1. Complexity Analysis using Big O Notation.
+2. Profiling Techniques using tools like LP Run in Jupyter.
+
+Learning Objectives
+    > Explain the importance of algorithmic efficiency.
+    > Recognize and describe six Big O notations.
+    > Report execution times in Jupyter.
+    > Interpret profiling and line profiling outputs in Jupyter.
+
+Why Focus on Algorithmic Efficiency?
+    > With the rise of big data, scalable algorithms are necessary.
+    > Efficient algorithms save time, thereby increasing user and employer satisfaction.
+    > Understanding efficiency is crucial for technical interviews in data science roles.
+
+Big O Notation
+> Big O notation helps categorize how algorithms perform as the input size grows. The lecture covers six key types:
+    1. O(1) - Order 1 (Constant Time): Time is constant regardless of input size.
+        - Example: Indexing arrays.
+    2. O(n) - Order N (Linear Time): Time scales linearly with input size.
+        - Example: Finding an item in an unordered list.
+    3. O(n^2) - Order N squared (Quadratic Time): Time proportional to the square of input size.
+        - Example: Bubble sort.
+    4. O(2n) - Order 2 to the N (Exponential Time): Time doubles with each addition to input size.
+        - Example: Recursive Fibonacci sequence calculation.
+    5. O(log(n)) - Order Log N (Logarithmic Time): Time scales with the logarithm of input size.
+        - Example: Binary search.
+    6. O(n log(n)) - Order N Log N: Combines linear and logarithmic scaling.
+        - Example: Merge sort.
+
+Order of Preference in Big O
+    > Most Preferred: Order 1 (Constant Time)
+    > Least Preferred: Order 2 to the N (Exponential Time)
+    > Logarithmic and N Log N times offer efficient alternatives for certain applications.
+
+Examples of Big O in Jupyter Notebooks
+
+1. Constant Time: Checking if the first element of a list is null.
+2. Linear Time: Function minecontainsvalue searches for a value in a list.
+3. Quadratic Time: Function containsduplicates checks for duplicate list entries.
+4. Exponential Time: Fibonacci sequence calculated with recursion.
+5. Logarithmic Time: Example involves dividing problem space, as shown in a Stack Overflow example.
+
+Profiling Techniques
+> Introducing profiling tools in Jupyter, focusing on LP Run command, helps track execution times and identify performance bottlenecks.
+
+> By understanding these concepts, one can create efficient algorithms that perform well even as data scales, ensuring productivity in practical applications. This knowledge is also essential for success in technical challenges posed in data science careers.
