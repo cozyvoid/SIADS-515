@@ -1,0 +1,135 @@
+Importance of Algorithm Steps
+
+    > The number of steps an algorithm takes is a key factor in determining its efficiency.
+    > Example: Linear search takes as many steps as there are cells in the array (N steps for N elements).
+
+Introducing Big O Notation
+
+    > Purpose: Provides a concise and consistent language to describe the efficiency of data structures and algorithms. 
+    > Benefit: Allows easy categorization and communication about the efficiency of algorithms.
+    > Mathematical Origin: Borrowed from mathematics but applied to computer science without jargon.
+
+Counting Steps with Big O Notation
+- Big O focuses on the number of steps rather than units of time.
+    O(1) - Constant Time:
+        > Algorithm takes the same number of steps regardless of data size.
+        > Example: Reading from an array, insertion, and deletion at the end of an array.   
+        > Represents operations that are unaffected by the amount of data.
+
+    O(N) - Linear Time:
+        > Algorithm takes N steps for N elements.
+        > Example: Linear search, which checks each cell one by one.
+        > Represents operations that scale directly with data size.
+
+Graphical Representation
+    O(1) - Constant Time:
+        > Plotted as a horizontal line; number of steps remains constant regardless of data size.
+        > Referred to as constant time.
+
+    O(N) - Linear Time:
+        > Plotted as a diagonal line; number of steps increases linearly with data size.
+        > Referred to as linear time.
+
+Constant Time in Practice
+
+    > An algorithm is still considered O(1) even if it always takes more than one step, as long as the number of steps remains constant.    
+    > Example: An algorithm taking three steps for any input size is O(1).
+    > Even a 100-step constant algorithm is O(1) because it does not increase with data size.
+
+Comparing Efficiencies
+
+O(1) vs. O(N):
+    > For small data sizes, O(N) may take fewer steps than a constant multi-step O(1) algorithm.
+    > Beyond a certain data size, O(N) will always take more steps than O(1), regardless of how many constant steps O(1) has.
+
+Scalability:
+    > O(1) algorithms scale better with increasing data sizes compared to O(N) algorithms.
+    > A constant-time algorithm remains efficient even as data grows, unlike linear-time algorithms which grow in steps proportionally.
+
+Key Takeaways
+
+    > Big O Notation describes how the number of steps changes with varying data sizes.
+    > O(1): Efficiency remains constant regardless of data size.
+    > O(N): Efficiency decreases linearly with increasing data size.
+    > Provides a tool for consistent analysis and comparison of algorithms, crucial for choosing the best approach in software development.
+
+Same Algorithm, Different Scenarios
+
+Variable Efficiency:
+- Linear search isn’t always O(N). It can also be O(1) in the best-case scenario.
+    > Best-case scenario: If the target item is in the first cell, linear search takes just one step (O(1)).
+    > Worst-case scenario: If the target item is in the last cell, linear search takes N steps (O(N)).
+
+Worst-Case Scenario Focus:
+    > Big O Notation typically refers to the worst-case scenario for a more conservative and prepared approach.
+    > Knowing the worst-case efficiency helps in making informed algorithm choices.
+
+Binary Search: An Algorithm of the Third Kind
+
+Binary Search Efficiency:
+    > Binary search can’t be described as O(1) or O(N).
+    > It’s much faster than O(N) but slower than O(1).
+
+Big O Description for Binary Search:
+    > Binary search is described as having a time complexity of O(log N).
+    > O(log N) describes algorithms that increase one step each time the data doubles.
+
+Logarithms:
+    > Definition: Logarithms are the inverse of exponents.
+    > Example: 2^3 = 8 implies log*2 8 = 3
+    > Alternative Explanation: Repeatedly dividing by 2 until reaching 1 gives the number of times (log base 2).
+
+O(log N) Explained
+    > Shorthand: O(log N) is shorthand for O(log2 N).
+    > Steps:
+        - For N data elements, the algorithm takes log2 N steps.
+        - Example: For 8 elements, the algorithm takes 3 steps (log2 8 = 3).
+
+Binary Search Process:
+    > In binary search, each step halves the number of elements to search until finding the target.
+
+Comparing Efficiencies
+
+Efficiency Hierarchy:
+    > O(1): Most efficient, constant steps.
+    > O(log N): Less efficient than O(1), but much better than O(N).
+    > O(N): Least efficient among the three.
+
+Graphical Comparison:
+    > O(log N) curves upwards slightly, indicating an increase in steps with data, but much slower than O(N).
+
+Table of Comparison:
+    > Shows significant differences in steps between O(N) and O(log N) as data size increases.
+
+N Elements          O(N)           O(log N)
+8	                8	            3
+16	                16	            4
+32	                32	            5
+64	                64	            6
+128	                128	            7
+256	                256	            8
+512	                512	            9
+1024	            1024	        10
+
+Practical Examples
+
+For Loop:
+    > Example: Printing items from a list.
+    > Takes as many steps as there are elements in the list.
+    > Efficiency: O(N).
+
+Simple Print Statement:
+    > Example: print('Hello world!').
+    > Always takes one step regardless of context.
+    > Efficiency: O(1).
+
+Prime Number Check:
+    > Example: Checking if a number is prime.
+    > For loop runs for about the same number of steps as the input number.
+    > Efficiency: O(N).
+
+Wrapping Up
+
+Consistent Comparison:
+    > Big O Notation provides a consistent way to compare algorithms.
+    > Essential for analyzing and selecting efficient algorithms for real-world applications.
