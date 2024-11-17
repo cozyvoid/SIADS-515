@@ -1,0 +1,90 @@
+1. Which of the below runtimes are most ideal?
+
+    > O(n!)
+    > O(2^n)
+    > O(n^3)
+    - O(n)
+
+The most ideal runtime from the list is O(n).
+
+Here's a quick rundown of the runtimes, ranked from least ideal to most ideal:
+
+O(n!) - Factorial Time: This is the least efficient and grows extremely fast with the increase in input size. Algorithms with this complexity are impractical for even moderately large inputs.
+
+O(2^n) - Exponential Time: Also very inefficient, as the runtime doubles with each additional input. Used in algorithms with combinatorial problems but not suitable for large inputs.
+
+O(n^3) - Cubic Time: More efficient than exponential time but still grows quickly. Used in some nested loops, but not ideal for large inputs.
+
+O(n) - Linear Time: This is the most efficient among the options provided. The runtime grows linearly with the input size, making it highly scalable and suitable for large datasets.
+
+2. Which of the below runtimes are most ideal?
+
+    > O(n log n)
+    - O(log n)
+    > O(n^2)
+    > O(n!)
+
+The most ideal runtime from the list is O(log n).
+
+Here’s a quick rundown of the runtimes, ranked from most ideal to least ideal:
+
+O(log n) - Logarithmic Time: This is highly efficient, as the number of steps increases very slowly compared to the input size. Algorithms like binary search have this complexity.
+
+O(n log n) - Linearithmic Time: More efficient than O(n^2) and commonly seen in efficient sorting algorithms like mergesort and heapsort.
+
+O(n^2) - Quadratic Time: Less efficient, as the number of steps grows quadratically with the input size. Often seen in algorithms with nested loops, like bubble sort.
+
+O(n!) - Factorial Time: The least efficient and grows extremely fast, becoming impractical for even moderately large inputs. Algorithms with this complexity are rare and typically used for brute-force solutions.
+
+
+3. O Notation tells us...
+
+    > the exact runtime of an algorithm
+    - how runtime requirements scale to size of input data
+
+O Notation tells us how runtime requirements scale to the size of input data.
+
+It provides a way to describe the efficiency of an algorithm in terms of how the runtime grows as the input size increases. It does not give the exact runtime but rather a general idea of the algorithm's behavior and performance relative to the size of the input data. This helps in comparing different algorithms and understanding their scalability and efficiency.
+
+4. O-Notation is meant to model performance under...
+
+    > the best-case conditions
+    - the worst-case conditions
+
+O-Notation is meant to model performance under the worst-case conditions.
+
+Big O Notation typically describes the upper limit of an algorithm's runtime, focusing on the most pessimistic scenario. This helps ensure that we are prepared for the most demanding situations an algorithm may encounter. However, it's also possible to describe best-case or average-case scenarios with other notations or by specifying them explicitly. But generally, when referring to Big O Notation, it defaults to the worst-case scenario.
+
+5. At your summer internship you find yourself asked to write an algorithm that runs in “constant time.” Which of the below notations does this correspond with?
+
+    > O(c)
+    > O(0)
+    - O(1)
+    > O(θ), or simply θ
+
+An algorithm that runs in “constant time” corresponds with O(1).
+
+O(1), or "Big O of 1," indicates that the algorithm takes a fixed number of steps regardless of the size of the input data. This means the runtime does not change as the input size increases or decreases, making it the ideal notation for an algorithm that runs in constant time.
+
+6. Indexing a single element in an array is an operation that could be said to run in ____ time?
+
+    - constant
+    > linear
+    > quadratic
+    > logarithmic time
+
+Indexing a single element in an array is an operation that could be said to run in constant time.
+
+O(1) or constant time indicates that the operation takes the same number of steps regardless of the size of the array. This means that accessing any element in an array is efficient and does not depend on the array's length.
+
+7. After a programming interview, you receive critical feedback that your implementation of a function unnecessarily takes exponential time when the expectation was for it to run in linear time. Which of the following statements are valid:
+
+    > The function runtime is expected to remain consistent regardless of input size.
+    > The function runtime currently scales proportionately to input size.
+    - The function runtime currently doubles for each positive incrementation to the input size.
+
+The valid statement in this context is:
+
+> The function runtime currently doubles for each positive incrementation to the input size.
+
+This is characteristic of exponential time complexity, where the runtime grows exponentially with each increment in the input size, often described as O(2^n). This type of growth is significantly less efficient than linear time complexity, where the runtime scales proportionately to the input size, described as O(n).
